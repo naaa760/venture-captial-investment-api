@@ -32,7 +32,7 @@ describe("validateInvestment", () => {
     ];
 
     const result = validateInvestment(investment, rules, allInvestments);
-    expect(result).toEqual([2]);
+    expect(result).toEqual([1, 2]);
   });
 
   it("should handle rules with different time periods correctly", () => {
